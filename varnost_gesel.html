@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Kako shekati geslo?</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="./Pic/Varnost_gesel/ozadje.jpg" data-background-opacity="0.7">
+                    <h2>Kako shekati geslo?</h2>
+                    <p>
+						Avtor: Nejc Kraševec<br>
+						Razred: R3D<br>
+						Mentorica: prof. Tanja Kocjan<br>
+						Šolsko leto: 2022-2023
+                    </p>
+                </section>
+				<section data-background-image="./Pic/Varnost_gesel/ozadje.jpg" data-background-opacity="0.7">
+                    <h2>Kako varno mislite, da je vaše geslo?</h2>
+				</section>
+                <section data-background-image="./Pic/Varnost_gesel/ozadje.jpg" data-background-opacity="0.7">
+					<section>
+						<h3>Napad z knjižnjicami (Dictionary attack)</h3>
+						<p>
+							<ul>
+								<li>Najpogostejša in najlažja gesla</li>
+								<li>Ena najpogostejših (in najučinkovitejših) metod</li>
+							</ul>
+						</p>
+					</section>
+					<section>
+						<h3>Rockyou</h3>
+						<p>
+							<ul>
+								<li>82 milijonov unikatnih gesel</li>
+								<li>Med 6 in 20 znakov</li>
+								<li><a href="https://github.com/ohmybahgosh/RockYou2021.txt">Github repositorij</a></li>
+							</ul>
+						</p>
+					</section>
+				</section>
+				<section data-background-image="./Pic/Varnost_gesel/ozadje.jpg" data-background-opacity="0.7">
+					<h3>Napad z mavričnimi tabelami (Rainbow table attack)</h3>
+					<p>
+						<ul>
+							<li>Primerja znane zgoščenke (hashe)</li>
+							<li>Pred začetkom generamo/pridobimo tabelo zgoščenih vrednosti</li>
+							<li>Ujemajoča zgoščena vrednost --> pogledamo vrednost najdene zgoščene vrednosti</li>
+						</ul>
+					</p>
+				</section>
+				<section data-background-image="./Pic/Varnost_gesel/ozadje.jpg" data-background-opacity="0.7">
+					<section>
+						<h3>Napad z grobo silo (Brute force attack)</h3>
+						<p>
+							<ul>
+								<li>Vse možne kombinacije</li>
+								<li>Procesorska moč</li>
+								<li>Čas</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+				<section data-background-image="./Pic/Varnost_gesel/ozadje.jpg" data-background-opacity="0.7">
+					<section>
+						<h3>Ugibanje (Guessing)</h3>
+						<p>
+							<ul>
+								<li>Najverjetnejša, najpogostejša gesla</li>
+								<li>Nezadnostno znanje uporabnikov --> zelo efektivno</li>
+							</ul>
+						</p>
+					</section>
+					<section data-background-image="./Pic/Varnost_gesel/ozadje.jpg" data-background-opacity="0.7">
+						<h3>Primer ugibanja</h3>
+						<p>
+							<ul>
+								<li>admin:admin</li>
+								<li>admin:1234</li>
+								<li>user:user</li>
+								<li>user:1234</li>
+								<li>uzrs:uzrs</li>
+							</ul>
+						</p>
+					</section>
+				</section>
+				<section data-background-image="css/slike/hacking_ozadje.jpg" data-background-opacity="0.5">
+					<h3>Video</h3>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/A7nih6SANYs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</section>
+                <section data-background-image="css/slike/hacking_ozadje.jpg" data-background-opacity="0.5">
+					<h3>Viri</h3>
+					<p>
+						<ul>
+							<li><a href="https://cdn.animalhi.com/1920x1080/20180417/5ad5ca682c743.jpg" style="color: #ffff;">https://cdn.animalhi.com/1920x1080/20180417/5ad5ca682c743.jpg</a></li>
+							<li><a href="https://dis-slovarcek.ijs.si/" style="color: #ffff;">https://dis-slovarcek.ijs.si/</a></li>
+							<li><a href="https://www.flackbox.com/arp-the-address-resolution-protocol" style="color: #ffff;">https://www.flackbox.com/arp-the-address-resolution-protocol</a></li>
+						</ul>
+					</p>
+				</section>
+				
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
